@@ -17,7 +17,22 @@ export const usePreferencesStore = create(
     immer<PreferencesStore>((set) => ({
       enableThumbnails: true,
       enableAutoplay: true,
-      sourceOrder: [],
+      sourceOrder: [
+    "filmxy",
+    "autoembed",
+    "m4ufree",
+    "catflix",
+    "hdrezka",
+    "whvx",
+    "ee3",
+    "nites",
+    "primewire",
+    "insertunit",
+    "soapertv",
+    "tugaflix",
+    "nsbx",
+    "moviplus",
+  ],
       setEnableThumbnails(v) {
         set((s) => {
           s.enableThumbnails = v;
