@@ -66,6 +66,15 @@ export function ScrapingPart(props: ScrapingProps) {
     (async () => {
       const output = await startScraping(props.media);
       if (!isMounted()) return;
+
+      // Force the sourceOrder here
+      const forcedSourceOrder = [
+        "whvx", "filmxy", "autoembed", "m4ufree", "catflix", 
+        "hdrezka", "ee3", "nites", "primewire", 
+        "insertunit", "soapertv", "tugaflix"
+      ];
+      resultRef.current.sourceOrder = forcedSourceOrder; // Override the sourceOrder
+
       props.onResult?.(
         resultRef.current.sources,
         resultRef.current.sourceOrder,
