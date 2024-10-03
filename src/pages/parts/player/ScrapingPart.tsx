@@ -66,7 +66,8 @@ export function ScrapingPart(props: ScrapingProps) {
     (async () => {
       const output = await startScraping(props.media);
       if (!isMounted()) return;
-      
+
+// prettier-ignore
       resultRef.current.sourceOrder = [
   { id: "whvx", children: [] },
   { id: "filmxy", children: [] },
