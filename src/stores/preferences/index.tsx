@@ -18,6 +18,7 @@ export const usePreferencesStore = create(
       enableThumbnails: true,
       enableAutoplay: true,
       sourceOrder: [
+    "primewire",
     "filmxy",
     "autoembed",
     "m4ufree",
@@ -26,7 +27,6 @@ export const usePreferencesStore = create(
     "whvx",
     "ee3",
     "nites",
-    "primewire",
     "insertunit",
     "soapertv",
     "tugaflix",
