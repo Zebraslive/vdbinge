@@ -36,7 +36,7 @@ importers:
         version: 1.0.3
       '@movie-web/providers':
         specifier: github:VidBingeApp/providers
-        version: git+https://git@github.com:VidBingeApp/providers.git#f2b5f5d987cffbfe788cc85af8303be867d89ed9
+        version: github.com/VidBingeApp/providers/59fff38ed58879a38ba585bc11818f85e4e37d1a
       '@noble/hashes':
         specifier: ^1.4.0
         version: 1.4.0
