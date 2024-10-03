@@ -66,8 +66,7 @@ export function ScrapingPart(props: ScrapingProps) {
     (async () => {
       const output = await startScraping(props.media);
       if (!isMounted()) return;
-
-      // Force the sourceOrder here
+      
       resultRef.current.sourceOrder = [
   { id: "whvx", children: [] },
   { id: "filmxy", children: [] },
@@ -81,7 +80,7 @@ export function ScrapingPart(props: ScrapingProps) {
   { id: "insertunit", children: [] },
   { id: "soapertv", children: [] },
   { id: "tugaflix", children: [] },
-]; // Override the sourceOrder
+]; 
 
       props.onResult?.(
         resultRef.current.sources,
