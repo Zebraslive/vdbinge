@@ -67,22 +67,6 @@ export function ScrapingPart(props: ScrapingProps) {
       const output = await startScraping(props.media);
       if (!isMounted()) return;
 
-// prettier-ignore
-      resultRef.current.sourceOrder = [
-  { id: "whvx", children: [] },
-  { id: "filmxy", children: [] },
-  { id: "autoembed", children: [] },
-  { id: "m4ufree", children: [] },
-  { id: "catflix", children: [] },
-  { id: "hdrezka", children: [] },
-  { id: "ee3", children: [] },
-  { id: "nites", children: [] },
-  { id: "primewire", children: [] },
-  { id: "insertunit", children: [] },
-  { id: "soapertv", children: [] },
-  { id: "tugaflix", children: [] },
-]; 
-
       props.onResult?.(
         resultRef.current.sources,
         resultRef.current.sourceOrder,
