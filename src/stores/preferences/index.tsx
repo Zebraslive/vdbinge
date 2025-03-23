@@ -15,7 +15,7 @@ export interface PreferencesStore {
 export const usePreferencesStore = create(
   persist(
     immer<PreferencesStore>((set) => ({
-      enableThumbnails: true,
+      enableThumbnails: false,
       enableAutoplay: true,
       sourceOrder: [
     "primewire",
@@ -28,7 +28,6 @@ export const usePreferencesStore = create(
     "ee3",
     "nites",
     "insertunit",
-    "soapertv",
     "tugaflix",
     "nsbx",
     "moviplus",
